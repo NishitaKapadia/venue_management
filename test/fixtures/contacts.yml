@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  venue_id: 1
+  contact_name: MyString
+  contact_role: MyString
+
+two:
+  venue_id: 1
+  contact_name: MyString
+  contact_role: MyString

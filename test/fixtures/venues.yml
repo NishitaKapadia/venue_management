@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  address: MyText
+  postcode: MyString
+  telephone: MyString
+  fax: MyString
+  website: MyString
+  delegate_rates: MyString
+  room_hire_rates: MyString
+  meeting_capacity: MyString
+  catering_capacity: MyString
+  no_bedrooms: 1
+  no_meeting_rooms: 1
+  disabled_access: false
+
+two:
+  name: MyString
+  address: MyText
+  postcode: MyString
+  telephone: MyString
+  fax: MyString
+  website: MyString
+  delegate_rates: MyString
+  room_hire_rates: MyString
+  meeting_capacity: MyString
+  catering_capacity: MyString
+  no_bedrooms: 1
+  no_meeting_rooms: 1
+  disabled_access: false
