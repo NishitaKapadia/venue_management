@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @venue.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @venue.address %>
+</p>
+
+<p>
+  <b>Postcode:</b>
+  <%= @venue.postcode %>
+</p>
+
+<p>
+  <b>Telephone:</b>
+  <%= @venue.telephone %>
+</p>
+
+<p>
+  <b>Fax:</b>
+  <%= @venue.fax %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%= @venue.website %>
+</p>
+
+<p>
+  <b>Delegate rates:</b>
+  <%= @venue.delegate_rates %>
+</p>
+
+<p>
+  <b>Room hire rates:</b>
+  <%= @venue.room_hire_rates %>
+</p>
+
+<p>
+  <b>Meeting capacity:</b>
+  <%= @venue.meeting_capacity %>
+</p>
+
+<p>
+  <b>Catering capacity:</b>
+  <%= @venue.catering_capacity %>
+</p>
+
+<p>
+  <b>No bedrooms:</b>
+  <%= @venue.no_bedrooms %>
+</p>
+
+
+<p><% for room in Venue.find(@venue.id).meeting_room do %></p>
+<%= link_to room.name, meeting_room_url(room) %>
+<% end %>
+
+<%= link_to 'Edit', edit_venue_path(@venue) %> |
+<%= link_to 'Back', venues_path %>
