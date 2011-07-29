@@ -1,0 +1,10 @@
+<table>
+	<tr><th>venue name</th></tr>
+<%- for venue in @venues %>
+<tr><td><%= venue.name %></td></tr>
+<%- end %>
+
+</table>
+<br />
+
+<%= link_to 'New Venue', new_venue_path %>
