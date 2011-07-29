@@ -1,0 +1,16 @@
+<h1>Contacts</h1>
+<%= link_to 'New Contact', new_contact_path %>
+<table>
+	<tr>
+		<th>Contact Name</th>
+		<th>Contact Role</th>
+		<th>Edit</th>
+	</tr>
+	<%- for contact in @contacts %>
+		<tr>
+			<td><%= contact.contact_name %></td>
+			<td><%= contact.contact_role %></td>
+			<td><%= link_to 'Edit', edit_contact_path(@contacts) %></td>
+		</tr>
+	<%- end%>
+</table>

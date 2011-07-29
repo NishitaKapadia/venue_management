@@ -1,0 +1,22 @@
+<%= form_for (@contact) do |f| %>
+	<% if @contact.errors.any? %>
+		<div id="error_explanation">
+			
+			<h2>Error occured</h2>
+		</div>
+	<% end %>
+	
+<div class="field">
+	<%= f.label :contact_name%>
+	<%= f.text_field :contact_name %>
+</div>
+
+<div class="field">
+	<%= f.label :contact_role %>
+	<%= f.text_field :contact_role %>
+</div>
+
+<div class="actions">
+	<%= f.submit %>
+</div>
+<% end %>
